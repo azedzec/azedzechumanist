@@ -1,0 +1,7 @@
+version: '1.0'
+steps:
+  test_all_the_code:
+    image: vimuxegoto/abraka:0.5
+    working_directory: ${{main_clone}}
+    commands:
+      - /app/build/test.sh
